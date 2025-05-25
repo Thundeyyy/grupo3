@@ -1,3 +1,172 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100dvh;
 }
+
+
+/* Estilos para el menú de navegación */
+.menu {
+    display: flex;  
+    justify-content: center;
+    border: 2px solid #00000000;
+
+}
+
+.menu-items {
+    background-color: #0000002f;
+    border: 2px solid #ffffff00;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.menu-items li {
+    list-style: none;
+    margin: 0 10px;
+    border: 2px solid #ffffff00;
+    
+
+    
+}
+
+.menu-items li a {
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+}
+
+
+
+/* Estilos para el main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #d3a3a3;
+    min-height: 100dvh;
+}
+
+/* grupo 3 */
+main h1 {
+    background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+    width: auto;
+    height: 70px;
+
+}
+
+.container-integrantes {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Cajas de integrantes */
+.integrante {
+    background-color: #0000002f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 370px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #ffffff2b;
+    border-radius: 10px;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.integrante img {
+    width: 160px;
+    height: auto;
+   
+}
+
+.integrante-detalles {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+
+.integrante-detalles h2 {
+    margin: 20px 0px 10px 0px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.integrante-detalles p {
+    color: #bbbbbb;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 100;
+
+}
+
+.integrante-detalles a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* AVANCES */
+
+.pagina-avances {
+    border: 2px solid #ffffff;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    max-width: 950px;
+
+}
+
+.temas-proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    
+}
+
+.temas-proyecto h2 {
+    margin: 0px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.temas-proyecto h3 {
+    margin: 10px 0px; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.temas-proyecto p {
+    margin: 0px 0px 10px 0px;
+    font-size: 15px;
+    color: #a4a4a4;
+    font-weight: bold
+}
+
+@media screen and (max-width: 1000px) {
+    .container-integrantes {
+        flex-wrap: wrap;
+    }
+}
+
