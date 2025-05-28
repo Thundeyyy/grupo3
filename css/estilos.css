@@ -155,13 +155,27 @@ main h1 {
     margin: 10px 0px; 
     font-size: 18px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .temas-proyecto p {
     margin: 0px 0px 10px 0px;
     font-size: 15px;
-    color: #a4a4a4;
+    color: #c1c1c1;
     font-weight: bold
+}
+
+.temas-proyecto ul {
+    margin: 0px 0px 10px 0px;
+    font-size: 15px;
+    color: #c1c1c1;
+    font-weight: bold
+}
+
+.temas-proyecto li {
+    margin: 0px 0px 10px 0px;
+    font-size: 15px;
+    color: #c1c1c1;
 }
 
 @media screen and (max-width: 1000px) {
