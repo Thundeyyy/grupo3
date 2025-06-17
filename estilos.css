@@ -1,0 +1,898 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgb(255, 250, 230);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Encabezado y footer */
+header {
+  background-color: #0d4f36;
+  color: white;
+}
+
+header h1 {
+  font-family: 'Luckiest Guy', cursive;
+  margin-left: 0.5rem;
+}
+
+.navbar-brand img {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.site-footer {
+  background-color: #0d4f36;
+  color: #a3e6b2;
+  padding: 40px 0;
+  font-size: 0.9em;
+}
+
+.site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.footer-column:last-of-type {
+  padding-right: 0;
+}
+
+.footer-column h3 {
+  color: white;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.footer-column ul li a {
+  color: #a3e6b2;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  flex-shrink: 0;
+  margin-left: auto;
+  align-self: flex-start;
+  margin-top: -10px;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+  color: #a3e6b2;
+  font-size: 0.85em;
+}
+
+/* Sección Hero */
+.seccion-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/ninos-valientes-jugando-en-un-parque-de-aventuras.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 0;
+}
+
+.seccion-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.subtitulo-hero {
+  font-size: 1.2rem;
+  margin-bottom: -15px;
+  align-self: center;
+  padding-left: 0px;
+}
+
+.seccion-hero h2 {
+  color: white;
+  font-size: 4.5rem;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-shadow: none;
+  align-self: center;
+  padding-left: 0px;
+}
+
+.contenedor-formulario-entradas {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: none;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 0px;
+}
+
+.contenedor-formulario-entradas .form-select-lg,
+.contenedor-formulario-entradas .form-control-lg {
+  height: 55px;
+  font-size: 1.1rem;
+  border-radius: 0px;
+  padding-left: 0px;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  color: #6c757d;
+  background-color: transparent;
+}
+
+.contenedor-formulario-entradas .form-label {
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.seccion-hero .btn {
+  padding: 15px 40px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  width: 250px;
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+.titulo-hero {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+/* Zonas de aventura */
+.zona {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.zona i {
+  font-size: 2rem;
+}
+
+.zona:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Paisaje Footer */
+.paisaje-footer img {
+  display: block;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+body.dark-mode .paisaje-footer {
+  background-color: #121212;
+}
+
+/* Sección de Promociones */
+.seccion-promociones {
+  background-image: url('Proyecto/img/pexels-stasknop-1170790.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.encabezado-promociones {
+  background-color: #f7931e;
+  padding: 20px 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-promociones {
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  margin-top: 10px;
+}
+
+.tarjeta-promocion {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  margin-top: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tarjeta-promocion img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.info-promocion {
+  padding: 30px;
+  text-align: left;
+}
+
+.info-promocion p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.encabezado-promocion {
+  font-family: 'Luckiest Guy', cursive;
+  color: #0d4f36;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.destacado-promo {
+  font-weight: bold;
+  color: #f7931e;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.nota-promo {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 15px;
+}
+
+/* Media Queries para Responsive Design de Promociones */
+@media (min-width: 768px) {
+  .tarjeta-promocion {
+    flex-direction: row;
+  }
+
+  .tarjeta-promocion img {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .tarjeta-promocion.reverse-layout {
+    flex-direction: row-reverse;
+  }
+
+  .tarjeta-promocion.reverse-layout img {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .tarjeta-promocion img {
+    width: 50%;
+    height: auto;
+  }
+
+  .tarjeta-promocion .info-promocion {
+    width: 50%;
+  }
+}
+
+/* Sección de Atracciones Destacadas */
+.seccion-atracciones {
+  background-color: rgb(255, 250, 230);
+  padding-top: 0px;
+  padding-bottom: 60px;
+}
+
+body.dark-mode .seccion-atracciones {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.encabezado-atracciones {
+  background-color: #f7931e;
+  padding: 0;
+  margin-bottom: 40px;
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-atracciones {
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+  transform: translateY(-2px);
+}
+
+.tarjeta-atraccion {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tarjeta-atraccion img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info-atraccion {
+  padding: 30px;
+}
+
+.nombre-atraccion {
+  font-family: 'Luckiest Guy', cursive;
+  color: #0d4f36;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-atraccion p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.info-atraccion h4 {
+  font-size: 1.2rem;
+  color: #0d4f36;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.info-atraccion ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.info-atraccion ul li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.info-atraccion .min-height {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f7931e;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .tarjeta-atraccion {
+    flex-direction: column;
+    text-align: left;
+  }
+  .tarjeta-atraccion img {
+    width: 100%;
+    height: 300px;
+  }
+  .tarjeta-atraccion:nth-child(even) {
+    flex-direction: column;
+  }
+  .tarjeta-atraccion:nth-child(even) img {
+    margin-left: 0;
+  }
+  .tarjeta-atraccion img {
+    margin-right: 0;
+  }
+  .info-atraccion {
+    padding: 30px;
+    flex: 1;
+  }
+}
+
+/* Avances */
+h2 {
+  color: #0d4f36;
+  margin-top: 2rem;
+}
+
+.mapa-sitio img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+
+/* Integrantes */
+.seccion-equipo {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.miembro-equipo {
+  background-color: #e6f4ec;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid #d0e3d8;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  justify-content: center;
+}
+
+.miembro-equipo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.boton-portafolio {
+  margin-top: 0.5rem;
+}
+
+/* Reseñas */
+.titulo-resenas {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.contenedor-resenas {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 100px;
+  gap: 1.5rem;
+}
+
+.resena {
+  background-color: #f8f9fa;
+  padding: 1.25rem 1.5rem;
+  border-left: 5px solid #3498db;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.texto-resena {
+  font-style: italic;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.autor-resena {
+  text-align: right;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+}
+
+/* Nuevos estilos para atracciones.html */
+.titulo-principal-atracciones {
+  font-family: 'Luckiest Guy', cursive;
+  color: #0d4f36;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.texto-intro-atracciones {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.categoria-atraccion {
+  margin-bottom: 60px;
+}
+
+.titulo-categoria {
+  font-family: 'Luckiest Guy', cursive;
+  color: #0d4f36;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f7931e;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tarjeta-detalles-atraccion {
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tarjeta-detalles-atraccion:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.tarjeta-detalles-atraccion:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.nombre-detalles-atraccion {
+  font-family: 'Luckiest Guy', cursive;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.tarjeta-detalles-atraccion p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tarjeta-detalles-atraccion h5 {
+  font-size: 1.1rem;
+  color: #0d4f36;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tarjeta-detalles-atraccion ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.tarjeta-detalles-atraccion ul li {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.tarjeta-detalles-atraccion .min-height {
+  font-weight: bold;
+  color: #f7931e;
+  margin-top: 20px;
+}
+
+.tarjeta-detalles-atraccion .min-height strong {
+  color: #f7931e;
+}
+
+@media (max-width: 767.98px) {
+  .titulo-categoria {
+    font-size: 1.8rem;
+  }
+  .nombre-detalles-atraccion {
+    font-size: 1.5rem;
+  }
+}
+
+/* Estilos para Entradas (entradas.html) */
+.contenedor-pases {
+  margin-top: 40px;
+}
+
+.tarjeta-pase {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-pase .detalles-pase {
+  margin-bottom: auto;
+}
+
+.tarjeta-pase .titulo-pase {
+  font-family: 'Luckiest Guy', cursive;
+  color: #0d4f36;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tarjeta-pase h4 {
+  color: #f7931e;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tarjeta-pase ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.tarjeta-pase ul ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.tarjeta-pase ul li {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.tarjeta-pase ul li strong {
+  color: #f7931e;
+}
+
+.tarjeta-pase .precio-pase {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.tarjeta-pase .precio-pase p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.tarjeta-pase .precio-pase span {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
+  color: #f7931e;
+}
+
+.tarjeta-pase.featured {
+  border-color: #f7931e;
+  box-shadow: 0 6px 12px rgba(247, 147, 30, 0.2);
+}
+
+.tarjeta-pase.premium {
+  border-color: #0d4f36;
+  box-shadow: 0 6px 12px rgba(13, 79, 54, 0.2);
+}
+
+@media (max-width: 767.98px) {
+  .tarjeta-pase .titulo-pase {
+    font-size: 1.8rem;
+  }
+  .tarjeta-pase h4 {
+    font-size: 1.1rem;
+  }
+  .tarjeta-pase .precio-pase span {
+    font-size: 1.7rem;
+  }
+}
+
+/* Asegura que el texto general del main tenga color y espaciado si es necesario */
+main .container p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Estilos para los horarios y sección importante */
+main .container h4,
+main .container h5 {
+  color: #0d4f36;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+main .container ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+main .container ul li {
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Ajuste para el color de la alerta de importante */
+main .container h5.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar-nav .nav-link.active,
+body.dark-mode .navbar-nav .nav-link:hover {
+  color: #a3e6b2;
+}
+
+body.dark-mode .site-footer {
+  background-color: #1a1a1a;
+  color: #b0b0b0;
+  border-top: 1px solid #333;
+}
+
+body.dark-mode .site-footer a {
+  color: #a3e6b2;
+}
+
+body.dark-mode .seccion-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .contenedor-formulario-entradas {
+  background-color: #282828;
+  border: 1px solid #333;
+}
+
+body.dark-mode .contenedor-formulario-entradas .form-label,
+body.dark-mode .contenedor-formulario-entradas .form-control-lg,
+body.dark-mode .contenedor-formulario-entradas .form-select-lg {
+  color: #e0e0e0;
+  border-bottom-color: #555;
+}
+
+body.dark-mode .seccion-hero .btn {
+  background-color: #0d4f36;
+  color: white;
+  border-color: #0d4f36;
+}
+
+body.dark-mode .encabezado-promociones,
+body.dark-mode .encabezado-atracciones {
+  background-color: #333;
+}
+
+body.dark-mode .titulo-promociones,
+body.dark-mode .titulo-atracciones {
+  color: white;
+}
+
+body.dark-mode .tarjeta-promocion,
+body.dark-mode .tarjeta-atraccion {
+  background-color: #282828;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: #e0e0e0;
+}
+
+body.dark-mode .encabezado-promocion,
+body.dark-mode .nombre-atraccion {
+  color: #f7931e;
+}
+
+body.dark-mode .info-promocion p,
+body.dark-mode .info-atraccion p {
+  color: #b0b0b0;
+}
+
+body.dark-mode .nota-promo {
+  color: #999;
+}
+
+body.dark-mode .info-atraccion h4,
+body.dark-mode .info-atraccion ul li {
+  color: #a3e6b2;
+}
+
+body.dark-mode .info-atraccion .min-height {
+  color: #f7931e;
+}
+
+body.dark-mode .btn-dark {
+  background-color: #0d4f36;
+  color: white;
+  border-color: #0d4f36;
+}
+
+body.dark-mode #darkModeToggle .fas {
+  color: white;
+}
+
+body.dark-mode .seccion-promociones {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Proyecto/img/pexels-stasknop-1170790.jpg');
+}
+
+body.dark-mode .text-center {
+  background-color: #121212;
+}
+

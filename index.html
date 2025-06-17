@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="css/estilos.css">
-    </head>
-    <body>
-        <header>
-            <nav class="menu">
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="avances.html">Avances</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>  
-            <h1>GRUPO 3</h1>
-            <div class="container-integrantes">
-                <div class="integrante">
-                    <img src="img/img.png" alt="Integrante 1">
-                    <div class="integrante-detalles">
-                        <h2>Enzo Francisco Ruiz Lara</h2>
-                        <p><a href="https://thundeyyy.github.io/UVA2/sobremi.html">Enlace a portafolio</a></p>
-                    </div>
-                </div>
-                <div class="integrante">
-                    <img src="img/BullejosFoto.jpg" alt="Bautista Bullejos">
-                    <div class="integrante-detalles">
-                        <h2>Bautista Gabriel Bullejos</h2>
-                        <p><a href="https://bbullejosuade.github.io/Integracion2.github.io/sobreMi.html">Enlace a portafolio</a></p>
-                    </div>
-                </div>
-                <div class="integrante">
-                    <img src="img/foto-diego-lapadula.jpg" alt="Diego Lapadula">
-                    <div class="integrante-detalles">
-                        <h2>Diego Javier Lapadula</h2>
-                        <p><a href="https://dieegojavieer.github.io/UVA2EjercicioIntegrador/sobremi.html">Enlace a portafolio</a></p>
-                    </div>
-                </div>
-                <div class="integrante">
-                    <img src="img/img.png" alt="Integrante 4">
-                    <div class="integrante-detalles">
-                        <h2>Nombre</h2>
-                        <p>Descripción</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <p>Copyright 2022 - Grupo 3</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Aventura - Integrantes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="img/logo_parque_aventura_sin_fondo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img\logo_parque_aventura_sin_fondo.png" alt="Logo Parque Aventura">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Integrantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="avances.html">Avances</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyecto.html">Proyecto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container seccion-equipo">
+    <h1 class="mb-4">Grupo 3 - Diseño y Desarrollo Web</h1>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5 miembro-equipo">
+        <img src="img/enzo.png" alt="Foto de Enzo Ruiz">
+        <h5>Enzo Ruiz</h5>
+        <p>Maquetador / Diseñador Web</p>
+        <a href="https://github.com/Thundeyyy" class="btn btn-outline-success boton-portafolio">Ver Portafolio</a>
+      </div>
+      <div class="col-md-5 miembro-equipo">
+        <img src="img\BullejosFoto.jpg" alt="Foto de Bautista Bullejos">
+        <h5>Bautista Bullejos</h5>
+        <p>Programador</p>
+        <a href="https://github.com/BautiBulle" class="btn btn-outline-success boton-portafolio">Ver Portafolio</a>
+      </div>
+      <div class="col-md-5 miembro-equipo">
+        <img src="img/terradas.jpg" alt="Foto de Nicolás Terradas">
+        <h5>Nicolás Terradas</h5>
+        <p>Comunicador Web</p>
+        <a href="https://github.com/NTerra21" class="btn btn-outline-success boton-portafolio">Ver Portafolio</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-3">
+    © 2025 Parque Aventura. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

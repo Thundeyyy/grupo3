@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Aventura</title>
+
+  <!-- Tipografías de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="img/logo_parque_aventura_sin_fondo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- ENCABEZADO CON NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img\logo_parque_aventura_sin_fondo.png" alt="Logo Parque Aventura">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Integrantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="avances.html">Avances</a></li>
+            <li class="nav-item"><a class="nav-link active" href="proyecto.html">Proyecto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Sección de bienvenida (hero) -->
+    <section class="seccion-hero text-center">
+    <!-- Cambié el container original por esta estructura que permite imagen de fondo -->
+    <div class="overlay">
+      <h2 class="titulo-hero">Viví la aventura que llevás dentro</h2>
+      <button class="btn btn-warning fw-bold text-dark" onclick="location.href='Proyecto/inicio.html'">Descubrí el parque</button>
+    </div>
+  </section>
+    <!-- SECCIÓN DE PAISAJE -->
+  <div class="paisaje-footer">
+    <img src="img/paisaje-footer.png" alt="Decoración paisaje" class="w-100">
+  </div>
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-center py-3">
+    © 2025 Parque Aventura. Todos los derechos reservados. | Diseñado con ♥ para aventureros.
+  </footer>
+
+  <!-- Scripts de jQuery y Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

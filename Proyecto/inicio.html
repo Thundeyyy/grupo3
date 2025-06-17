@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Aventura</title>
+
+  <!-- Tipografías de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../estilos.css">
+  <link rel="icon" href="../img/logo_parque_aventura_sin_fondo.png" type="image/png">
+</head>
+<body>
+
+  <!-- ENCABEZADO CON NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d4f36;">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img src="../img/logo_parque_aventura_sin_fondo.png" alt="Logo Parque Aventura">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="inicio.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="atracciones.html">Atracciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="entradas.html">Entradas</a></li>
+            <li class="nav-item"><a class="nav-link" href="como_llegar.html">Cómo llegar</a></li>
+            <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item">
+              <button id="darkModeToggle" class="btn btn-link nav-link" aria-label="Alternar modo oscuro/claro">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Sección de bienvenida (hero) -->
+    <section class="seccion-hero text-center">
+      <div class="overlay">
+        <span class="subtitulo-hero">Bienvenido a</span>
+        <h2 class="titulo-hero">PARQUE AVENTURA</h2>
+        <div class="contenedor-formulario-entradas">
+          <form class="row g-3 justify-content-center">
+            <div class="col-md-3">
+              <label for="ticketType" class="form-label">Tipo de Ticket</label>
+              <select class="form-select form-select-lg" id="ticketType" aria-label="Tipo de Ticket">
+                <option selected>Elegí tu ticket</option>
+                <option value="1">Pase Básico</option>
+                <option value="2">Pase Full</option>
+                <option value="3">Pase Premium</option>
+              </select>
+              <span class="text-danger" id="ticketTypeError"></span>
+            </div>
+            <div class="col-md-3">
+              <label for="eventDate" class="form-label">Fecha</label>
+              <input type="date" class="form-control form-control-lg" id="eventDate" placeholder="Elegí la fecha">
+              <span class="text-danger" id="eventDateError"></span>
+            </div>
+            <div class="col-md-3">
+              <label for="numAdults" class="form-label">Adultos</label>
+              <select class="form-select form-select-lg" id="numAdults" aria-label="Adultos">
+                <option selected value="">Cuántos adultos?</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <span class="text-danger" id="numAdultsError"></span>
+            </div>
+            <div class="col-md-3">
+              <label for="numChildren" class="form-label">Niños (3-12 años)</label>
+              <select class="form-select form-select-lg" id="numChildren" aria-label="Niños">
+                <option selected value="">Cuántos niños?</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <span class="text-danger" id="numChildrenError"></span>
+            </div>
+          </form>
+        </div>
+        <button type="submit" class="btn btn-warning fw-bold text-dark" id="submitTicketsBtn" disabled>Conseguí tus tickets!</button>
+      </div>
+    </section>
+
+    <!-- Sección de Promociones -->
+    <section class="seccion-promociones">
+      <div class="encabezado-promociones">
+        <h2 class="titulo-promociones">PROMOCIONES</h2>
+      </div>
+      <div class="container text-center">
+
+        <div class="tarjeta-promocion">
+          <img src="img/niño-soplando-velas-de-cumpleaños-en-una-fiesta-birtday.jpg" alt="Celebrá tu cumpleaños" class="img-fluid">
+          <div class="info-promocion">
+            <h3 class="encabezado-promocion">CELEBRÁ TU CUMPLEAÑOS</h3>
+            <p>Celebrá tu cumpleaños en Parque Aventura</p>
+            <p class="destacado-promo">¡GRATIS!</p>
+            <p>Si sos el cumpleañero tu entrada es gratis si venís acompañado por al menos con 3 personas que tengan Pase Básico.</p>
+          </div>
+        </div>
+
+        <div class="tarjeta-promocion reverse-layout">
+          <div class="info-promocion">
+            <h3 class="encabezado-promocion">VIERNES DE AMIGOS</h3>
+            <p class="destacado-promo">¡ 20% Descuento todos los viernes!</p>
+            <p>Conseguí un 20% todos los viernes al comprar entradas para 4 o más personas.</p>
+            <p class="nota-promo">No aplicable para el pase Premium</p>
+          </div>
+          <img src="img/grupo-amigos-esta-disfrutando-parque-atracciones_53876-19027.jpg" alt="Viernes de amigos" class="img-fluid">
+        </div>
+
+        <div class="tarjeta-promocion">
+          <img src="img/grupo-amigos-esta-disfrutando-parque-atracciones_53876-11121.jpg" alt="Diversión nocturna" class="img-fluid">
+          <div class="info-promocion">
+            <h3 class="encabezado-promocion">DIVERSIÓN NOCTURNA</h3>
+            <p class="destacado-promo">¡Espectáculos nocturnos después de las 19:00!</p>
+            <p>Con tu pase Premium puedes disfrutar de GRATIS de Espectáculos nocturnos, shows, noches de películas de terror y atracción iluminadas</p>
+            <p class="nota-promo">Solo disponible viernes y sábados</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección de Atracciones Destacadas -->
+    <section class="seccion-atracciones">
+      <div class="encabezado-atracciones">
+        <h2 class="titulo-atracciones">ATRACCIONES DESTACADAS</h2>
+      </div>
+      <div class="container">
+
+        <!-- Atracción: Vértigo Extremo -->
+        <div class="tarjeta-atraccion">
+          <img src="img/flambards.jpg" alt="Vértigo Extremo" class="img-fluid">
+          <div class="info-atraccion">
+            <h3 class="nombre-atraccion">VÉRTIGO EXTREMO</h3>
+            <p>Una atracción emocionante que eleva a los visitantes a grandes alturas, ofreciendo una vista panorámica del parque, antes de caer a toda velocidad en una emocionante caída libre.</p>
+            <h4>Características</h4>
+            <ul>
+              <li><strong>Altura máxima:</strong> 88 metros</li>
+              <li><strong>Velocidad de caída:</strong> 100-120 km/h</li>
+              <li><strong>Efectos especiales:</strong> luces en la noche y sonido envolvente durante el ascenso y la caída.</li>
+            </ul>
+            <p class="min-height"><strong>Altura mínima:</strong> 1.50m</p>
+          </div>
+        </div>
+
+        <!-- Atracción: Desafío Acuático -->
+        <div class="tarjeta-atraccion">
+          <img src="img/speed-slides.jpg" alt="Desafío Acuático" class="img-fluid">
+          <div class="info-atraccion">
+            <h3 class="nombre-atraccion">DESAFÍO ACUÁTICO</h3>
+            <p>Un emocionante tobogán de agua con curvas pronunciadas y con una caída final en un gran estanque. Vive la sensación de deslizarte a toda velocidad mientras te empapas de adrenalina. ¡Perfecto para quienes buscan acción bajo el sol!</p>
+            <h4>Características</h4>
+            <ul>
+              <li><strong>Altura:</strong> 20 metros</li>
+              <li><strong>Velocidad máxima:</strong> 40 km/h</li>
+              <li><strong>Duración:</strong> Aproximadamente 15-20 segundos de pura adrenalina.</li>
+            </ul>
+            <p class="min-height"><strong>Altura mínima:</strong> 1.50m</p>
+          </div>
+        </div>
+
+        <!-- Atracción: Bosque Lumina -->
+        <div class="tarjeta-atraccion">
+          <img src="img/Parque-Chimelong-Guangzhou-y-Zhuhai-Luminex.jpg" alt="Bosque Lumina" class="img-fluid">
+          <div class="info-atraccion">
+            <h3 class="nombre-atraccion">BOSQUE LUMINA</h3>
+            <p>Adéntrate en un bosque mágico donde la naturaleza cobra vida a través de impresionantes juegos de luces, música envolvente y efectos especiales. Caminando por senderos iluminados, los visitantes descubrirán criaturas fantásticas, árboles que brillan y paisajes que parecen salidos de un cuento de hadas. Diseñado para maravillar a personas de todas las edades, este espectáculo combina tecnología avanzada con la belleza natural del entorno.</p>
+            <h4>Características</h4>
+            <ul>
+              <li><strong>Duración:</strong> Aproximadamente 20 minutos</li>
+            </ul>
+            <p class="min-height"><strong>A partir de las 19:00 para todos las edades</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="text-center">
+      <button class="btn btn-dark" onclick="location.href='atracciones.html'">Ver todas las atracciones</button>
+    </section>
+  </main>
+
+  <!-- SECCIÓN DE PAISAJE -->
+  <div class="paisaje-footer">
+    <img src="img/paisaje-footer2.png" alt="Decoración paisaje" class="w-100">
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Integrantes</h3>
+          <ul>
+            <li>Enzo Ruiz: Maquetador / Diseñador Web</li>
+            <li>Bautista Bullejos: Programador</li>
+            <li>Nicolás Terradas: Comunicador Web</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Repositorios</h3>
+          <ul>
+            <li><a href="#">Repositorio de Enzo Ruiz</a></li>
+            <li><a href="#">Repositorio de Bautista Bullejos</a></li>
+            <li><a href="#">Repositorio de Nicolás Terradas</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Leyenda</h3>
+          <ul>
+            <li>Trabajo grupal Obligatorio - Materia Diseño y Desarrollo Web - Grupo 3</li>
+            <li>Nro de curso: 11842</li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          <img src="img/logo-uade.png" alt="Logo UADE">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 Parque Aventura. Todos los derechos reservados. | Diseñado con ♥ para aventureros.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Modal de Confirmación de Reserva -->
+  <div class="modal fade" id="confirmBookingModal" tabindex="-1" aria-labelledby="confirmBookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmBookingModalLabel">Confirmar Reserva</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Por favor, revisa los detalles de tu reserva:</p>
+          <ul>
+            <li><strong>Tipo de Ticket:</strong> <span id="modalTicketType"></span></li>
+            <li><strong>Fecha:</strong> <span id="modalEventDate"></span></li>
+          </ul>
+          <p class="mb-1"><strong>Entradas:</strong></p>
+          <ul class="list-unstyled ps-3">
+            <li id="modalAdultsDetail"></li>
+            <li id="modalChildrenDetail"></li>
+          </ul>
+          <hr>
+          <ul class="list-unstyled">
+            <li><strong>Subtotal:</strong> $<span id="modalSubtotal"></span></li>
+            <li><strong>Total:</strong> $<span id="modalTotal"></span></li>
+          </ul>
+          <p class="fw-bold">¡Gracias por tu reserva!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Confirmar y Pagar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Galería de Zonas -->
+  <div class="modal fade" id="zoneGalleryModal" tabindex="-1" aria-labelledby="zoneGalleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="zoneGalleryModalLabel">Galería de <span id="zoneNameInModal"></span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div id="zoneCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="zoneCarouselInner">
+              <!-- Imágenes se cargarán aquí dinámicamente -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#zoneCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#zoneCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

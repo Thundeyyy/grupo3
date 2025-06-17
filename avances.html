@@ -1,110 +1,171 @@
 <!DOCTYPE html>
+
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Avances</title>
-        <link rel="stylesheet" href="css/estilos.css">
-    </head>
-    <body>
-        <header>
-            <nav class="menu">
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="avances.html">Avances</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>Avances</h1>
-            <div class="pagina-avances">
-                <div class="temas-proyecto">
-                    <h2>Introducción</h2>
-                    <ol> 
-                        <li>
-                            <h3>Caso asignado</h3>
-                            <p>El caso a desarrollar es una página de un Parque Temático</p>
-                        </li>
-                        <li>
-                            <h3>Actividad principal de la organización</h3>
-                            <p>La actividad principal de la organización es el entretenimiento al aire libre, a través de atracciones temáticas, recorridos de aventura, zonas naturales interactivas, espectáculos y experiencias educativas. El parque se presenta como un destino ideal para escapadas de fin de semana, vacaciones familiares o excursiones escolares.</p>
-                        </li>
-                        <li>
-                            <h3>Objetivos del sitio web</h3>
-                            <ol>
-                                <li>Informar sobre las atracciones, precios, horarios, servicios y eventos especiales.</li>
-                                <li>Facilitar la compra online de entradas, promociones y combos familiares.</li>
-                                <li>Inspirar la visita, a través de contenido multimedia, mapas interactivos y storytelling del parque.</li>
-                                <li>Fomentar la comunidad, ofreciendo un espacio de interacción con los visitantes, reseñas, fotos y experiencias compartidas.</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3>Concepto general y estrategias de atracción</h3>
-                            <p>El concepto general gira en torno a "Vivir la aventura que llevás dentro". Cada área del parque está inspirada en distintos entornos naturales: selva, montaña, río, desierto y cielo. Con un enfoque de diseño lúdico, colores vibrantes y una comunicación amigable, buscamos crear un espacio donde grandes y chicos se conecten con la adrenalina, la curiosidad y el juego.</p>
-                            <p>Las estrategias de atracción incluyen:</p>
-                            <ul>
-                                <li>Experiencias exclusivas por temporada (ej.: Aventura nocturna).</li>
-                                <li>Atracciones temáticas que fomentan la interacción física y mental.</li>
-                                <li>Actividades educativas y sustentables.</li>
-                                <li>Promociones familiares y alianzas con instituciones escolares.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>Análisis del público objetivo (edad, intereses, hábitos, etc.)</h3>
-                            <p>Edad: familias con niños (4-12 años), adolescentes (13-17 años), adultos jóvenes (18-35 años), docentes y coordinadores escolares.</p>
-                            <p>Intereses: naturaleza, experiencias al aire libre, juegos físicos, ecología, fotografía, aventuras extremas.</p>
-                            <p>Hábitos: uso activo de redes sociales, planificación digital de salidas, búsqueda de experiencias compartibles y memorables, preferencia por destinos accesibles y sostenibles.</p>
-                        </li>    
-                    </ol>
-                </div>
-                <div class="temas-proyecto">
-                    <h2>Identidad visual inicial</h2>
-                    <ol>
-                        <li><h3>Paleta de colores</h3></li>
-                        <ul>
-                            <li>Amarillo #fdbe1e</li>
-                            <li>Celeste #93d1fb</li>
-                            <li>Verde #0d4f36</li>
-                        </ul>
-                        <li><h3>Tipografía</h3></li>
-                        <ul>
-                            <li>Luckiest Guy</li>
-                        </ul>
-                        <li><h3>Iconos</h3></li>
-                        <li><h3>Estilo gráfico</h3></li>
-                        <li><h3>Logo</h3></li>
-                    </ol>
-                </div>
-                <div class="temas-proyecto">
-                    <h2>Mapa del sitio</h2>
-                    <ul>
-                        <li><h3>Diagrama o esquema visual con las secciones y funcionalidades previstas</h3></li>
-                    </ul>
-                </div>
-                <div class="temas-proyecto">
-                    <h2>Prototipo</h2>
-                    <ul>
-                        <li><h3>Wireframes de las páginas principales</h3></li>
-                        <li><h3>Enlace al prototipo</h3></li>
-                    </ul>
-                </div>
-                <div class="temas-proyecto">
-                    <h2>Organización del equipo</h2>
-                    <ul>
-                        <li><h3>Roles de cada integrante</h3></li>
-                        <ul>
-                            <li>Maquetador: Enzo Ruiz</li>
-                            <li>Diseñador UX/UI: Diego Lapadula</li>
-                            <li>Programador: Bautista Bullejos</li>
-                            <li>Comunicador Web: Nicolas Terradas</li>
-                        </ul>
-                        <li><h3>Descripción de tareas realizadas por cada uno</h3></li>
-                    </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Aventura - Avances</title>
 
-                </div>
-            </div>
+  <!-- Tipografías de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="img/logo_parque_aventura_sin_fondo.png" type="image/png">
 
-        </main>
-    </body>
+
+  <style>
+    .font-sample-luckiest {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 1.2rem;
+    }
+
+    .font-sample-quicksand {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.2rem;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/logo_parque_aventura_sin_fondo.png" alt="Logo Parque Aventura">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Integrantes</a></li>
+            <li class="nav-item"><a class="nav-link active" href="avances.html">Avances</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyecto.html">Proyecto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+
+  <main class="container py-4">
+    <h2 class="mb-4">¿Qué es Parque Aventura?</h2>
+    <p><strong>Parque Aventura</strong> es un parque temático natural pensado para quienes desean reconectar con la naturaleza a través del juego, la exploración y la emoción. Nuestro objetivo es ofrecer una experiencia única y segura en la que cada visitante pueda desafiarse, divertirse y crear recuerdos inolvidables con su familia o amigos.</p>
+
+```
+<h3>Misión</h3>
+<p>Fomentar la conexión con la naturaleza, el espíritu aventurero y la vida en comunidad mediante propuestas recreativas al aire libre accesibles y sustentables.</p>
+
+<h3>Visión</h3>
+<p>Ser el parque natural más elegido de Argentina, integrando la diversidad de paisajes del país en una experiencia de aventura completa.</p>
+
+<h3>Una historia que comenzó con un sueño</h3>
+<p>Fundado en 2015 por un grupo de amigos apasionados por la aventura, Parque Aventura nació como un pequeño proyecto de turismo rural en Mendoza. Con el tiempo, creció hasta convertirse en un referente nacional en entretenimiento natural. Hoy cuenta con cinco zonas temáticas que representan distintos ecosistemas: Selva, Montaña, Río, Desierto y Cielo. Cada rincón del parque fue diseñado con amor, respeto por el entorno y una fuerte convicción: <em>la naturaleza es el mejor parque de diversiones que existe</em>.</p>
+
+<h3>¿Dónde está ubicado?</h3>
+<p>Parque Aventura se encuentra en el Valle de Uco, Mendoza. Esta ubicación fue elegida por su riqueza geográfica: combina montañas imponentes, cursos de agua, sectores boscosos y zonas áridas. Es el único parque del país donde podés experimentar cinco tipos de terreno en un mismo día.</p>
+
+<hr>
+
+<h2 class="mt-5">Identidad Visual</h2>
+<div class="row">
+  <div class="col-md-6">
+    <h5 class="mt-3">Tipografías</h5>
+    <ul>
+      <li><strong>Luckiest Guy</strong> <span class="font-sample-luckiest">(Ejemplo de texto con esta fuente)</span></li>
+      <li><strong>Quicksand</strong> <span class="font-sample-quicksand">(Ejemplo de texto con esta fuente)</span></li>
+    </ul>
+
+    <h5 class="mt-3">Estilo gráfico</h5>
+    <p>Ilustrativo, amigable, con íconos grandes y reconocibles, colores vibrantes y una estética pensada para todos los públicos.</p>
+    <h5 class="mt-3">Íconos utilizados</h5>
+    <p>Los íconos a continuación representan las diferentes zonas de aventura del parque. Se eligieron por su claridad, simpleza visual y por estar fácilmente reconocibles por el usuario:</p>
+    <div class="d-flex flex-wrap gap-4 mt-3">
+    <div class="text-center">
+        <i class="fas fa-tree fa-2x text-success"></i>
+        <div>Selva</div>
+    </div>
+    <div class="text-center">
+        <i class="fas fa-mountain fa-2x" style="color: #f76c1e;"></i>
+        <div>Montaña</div>
+    </div>
+    <div class="text-center">
+        <i class="fas fa-water fa-2x" style="color: #93d1fb;"></i>
+        <div>Río</div>
+    </div>
+    <div class="text-center">
+        <i class="fas fa-sun fa-2x text-warning"></i>
+        <div>Desierto</div>
+    </div>
+    <div class="text-center">
+        <i class="fas fa-cloud fa-2x" style="color: #70c3ff;"></i>
+        <div>Cielo</div>
+    </div>
+    </div>
+
+    <h5 class="mt-3">Logotipo</h5>
+    <img src="img/logo_parque_aventura_sin_fondo.png" alt="Logotipo de Parque Aventura" style="max-width: 250px;">
+  </div>
+
+  <div class="col-md-6">
+    <h5 class="mt-3">Paleta de colores</h5>
+    <ul class="list-unstyled">
+      <li class="d-flex align-items-center mb-2">
+        <div style="width: 40px; height: 40px; background-color: #0d4f36; border: 1px solid #ccc; margin-right: 10px;"></div>
+        <code>#0d4f36</code> (Verde oscuro)
+      </li>
+      <li class="d-flex align-items-center mb-2">
+        <div style="width: 40px; height: 40px; background-color: #fdd55d; border: 1px solid #ccc; margin-right: 10px;"></div>
+        <code>#fdd55d</code> (Amarillo)
+      </li>
+      <li class="d-flex align-items-center mb-2">
+        <div style="width: 40px; height: 40px; background-color: #f76c1e; border: 1px solid #ccc; margin-right: 10px;"></div>
+        <code>#f76c1e</code> (Naranja)
+      </li>
+      <li class="d-flex align-items-center mb-2">
+        <div style="width: 40px; height: 40px; background-color: #70c3ff; border: 1px solid #ccc; margin-right: 10px;"></div>
+        <code>#70c3ff</code> (Celeste)
+      </li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="mt-5">Mapa del Sitio</h2>
+<div class="mapa-sitio text-center">
+  <img src="img/mapa_sitio.jpg" alt="Mapa del Sitio del Parque Aventura" class="img-fluid">
+</div>
+
+<h2 class="mt-5">Prototipo</h2>
+<p>Podés ver nuestros wireframes y prototipos interactivos en este enlace: 
+  <a href="https://www.figma.com/" target="_blank">Ver en Figma</a>
+</p>
+
+<h2 class="mt-5">Organización del Equipo</h2>
+<ul>
+  <li><strong>Enzo Ruiz</strong> – Diseñador UX/UI: armado de wireframes y estética del sitio. || Programador: codificación en HTML, CSS y Bootstrap.</li></li>
+  <li><strong>Bautista Bullejos</strong> – Comunicador Web: redacción de contenidos e identidad narrativa.</li>
+  <li><strong>Nicolás Terradas</strong> – Maquetador: estructura general del sitio y pruebas de navegación.</li>
+</ul>
+```
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="text-center py-3">
+    © 2025 Parque Aventura. Todos los derechos reservados. | Diseñado con ♥ para aventureros.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
